@@ -1,1 +1,2 @@
 # ASCII-final-project
+Este projeto foi feito para o processo seletivo ASCII, apenas uma informação: as únicas utilidades feitas pelo javascript foram a mudança de tela do hero e um observer para ativar a animação em um momento específico. Limitei o javascript apenas a essas funcionalidades, então algumas partes, como o filtro e as diversas roupas, tem diversas páginas HTML para mudar apenas pequenos detalhes que poderiam ser mudadas com o javascript.
