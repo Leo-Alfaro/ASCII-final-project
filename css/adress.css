@@ -1,0 +1,80 @@
+/* exportação dos elementos base */
+@import url(./sub_css/var.css);
+@import url(./sub_css/header.css);
+@import url(./sub_css/animations.css);
+@import url(./sub_css/footer.css);
+/* área para adicionar display flex nos elementoa que precisam */
+#adress-section, #adress-container{
+    display: flex;
+    align-items: center;
+}
+/* configuração section da página adress */
+#adress-section{
+    height: 75vh;
+    width: 100vw;
+    justify-content: right;
+}
+/* configuração container */
+#adress-container{
+    height: 80%;
+    width: 75%;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+/* configuração texto principal superior */
+h1{
+    font-size: 2em;
+    color: var(--gold);
+}
+/* mudando de cor de todos e tamanho dos elementos label */
+#adress-container>div>label{
+    font-size: 1.2em;
+    color: var(--gold);
+}
+/* configuração dos inputs e selects */
+input, select{
+    color: var(--gold);
+    padding: 5px 10px;
+    background-color: #19181e;;
+    border: solid var(--gold) 2px;
+    margin-left: 20px;
+}
+input::placeholder{
+    color: var(--gold);
+}
+/* tirando appearance para evitar problemas */
+select{
+    appearance: none;
+}
+/* configuração botão submit */
+
+input[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 10%;
+}
+/* mudando a cor do botão (enviar) quando o mouse está em cima*/
+input[type="submit"]:hover{
+    background-color: rgb(250, 235, 215, .5);
+}
+@media screen and (max-width: 1100px) {
+    #adress-container{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 1.2em;
+    }
+    #adress-container>div>label{
+        font-size: 1.1em;
+    }
+    input, select{
+        margin-left: 10px;
+    }
+}

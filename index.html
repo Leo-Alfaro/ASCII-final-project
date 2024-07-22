@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roupas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo com link para a página home -->
+        <a href="" class="logo">
+            <img src="./imgs/logo.png">
+        </a>
+        <!-- botão para barra de navegação (celulares e tablets) -->
+        <input type="checkbox">
+        <!-- Barra de navegação -->
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="">HOME</a></li>
+                <li><a href="./html/products.html">PRODUTOS</a></li>
+                <li><a href="./html/about.html">SOBRE NÓS</a></li>
+                <li><a href="./html/contact.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção hero da home com mudanças de imagens de promoções com botão de redirecionamento -->
+        <section id="hero-section">
+            <div id="hero-container">
+                <!-- Botões de mudanças de promções -->
+                <input type="button" class="hero-button left" value="<" id="oneBack">
+                <input type="button" class="hero-button right" value=">" id="oneFront">
+                <!-- Botões de redirecionamento para a promoção -->
+                <a href="./html/products.html"  type="button" class="hero-button prom" id="proms">Ver Promoção</a>
+                <!-- Imagem do hero -->
+                <img id="hero-img" src="./imgs/hero_pants.png">
+            </div>
+        </section>
+        <!-- Seção mostruário de alguns produtos para melhor visualização dos produtos-->
+        <section id="products-section">
+            <div id="products-container">
+                <h2 class="" data-animation="right">Veja alguns de nossos produtos.</h2>
+                <!-- Template Grid de 3 produtos que vão ser mostrados -->
+                <div id="products-template">
+                    <!-- mostruário dos produtos -->
+                    <div class="product" data-animation="right">
+                        <a href="./html/sub-html/tshirt1.html" class="product-btn">Ver Produto</a>
+                        <img src="./imgs/Tshirt-1.png">
+                    </div>
+                    <div class="product" data-animation="right">
+                        <a href="./html/sub-html/tshirt2.html" class="product-btn">Ver Produto</a>
+                        <img src="./imgs/Tshirt-2.png">
+                    </div>
+                    <div class="product" data-animation="right">
+                        <a href="./html/sub-html/tshirt3.html" class="product-btn">Ver Produto</a>
+                        <img src="./imgs/Tshirt-3.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seção do tecido utilizado -->
+        <section id="tissue-section">
+            <div id="tissue-container">
+                <!-- Descrição do tecido -->
+                <div id="tissue-text" class="" data-animation="left">
+                    <h2>Do que é feito nossos tecidos ?</h2>
+                    <p>Podendo ser cultivado somente em 4 países do mundo inteiro, nós utilizamos o algodão de fibras longas, sendo um material nobre que está no topo da qualidade do que pode ser ofertado em algodão de qualquer peça de roupa, permitindo, assim, grande conforto pelo seu toque macio, além de grande durabilidade pela sua alta resistência.</p>
+                </div>
+                <!-- Imagem do tecido -->
+                <div id="tissue-img" class="" data-animation="left">
+                    <img src="./imgs/tissue.png" class="border-shine">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Descrição dos copyrights, Todas as imagens utilizados foram criadas pela ia desenvolvida pela DreamStudio -->
+        <div id="copyrights">
+            <p>© 2024 Roupas. Todos os direitos reservados.<br>
+            Todos os direitos de imagens são reservados ao DreamStudio.<br>
+            Todos os direitos de icons são reservados ao FlatIcon: FreePik e Pixel Perfect.</p>
+        </div>
+        <div id="social-medias">
+            <!-- Redirecionamento para redes sociais -->
+            <div>
+                <a href="">
+                    <img class="icon" src="./imgs/instagram-icon.png">
+                </a>                
+            </div>
+            <div>
+                <a href="">
+                    <img class="icon" src="./imgs/github-icon.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js" async defer></script>
+    <script src="./js/animation.js" async defer></script>
+</body>
+
+</html>

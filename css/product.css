@@ -1,0 +1,228 @@
+/* exportação dos elementos base */
+@import url(./sub_css/var.css);
+@import url(./sub_css/header.css);
+@import url(./sub_css/animations.css);
+@import url(./sub_css/footer.css);
+/* área para adicionar display flex nos elementoa que precisam (1)*/
+#tshirt_section, #tshirt_section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*configuração section do produto */
+#tshirt_section{
+    gap: 20px;
+    height: 80vh;
+    width: 100vw;
+}
+/* configurações containers img e text */
+#tshirt_section > div{
+    width: 50%;
+    height: 100%;
+}
+#tshirt-img-container{
+    height: 80%;
+    width: 80%;
+    background-color: var(--purple);
+    box-shadow: 0 0 40px 0 var(--gold);
+    border-radius: 5%;
+}
+#tshirt-img-container img{
+    height: 95%;
+    width: 85%;
+}
+/* aumento da imagem quando o mouse estiver em cima */
+#tshirt-img-container img:hover{
+    height: 115%;
+    width: 100%;
+}
+/* mudando algumas configurações com o !important, devido (#tshirt_section div), para ficar com o direção de coluna e alinhado */
+#tshirt-text-container, #tshirt-text-informations, #tshirt-text-colors{
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    align-items: baseline !important;
+
+}
+/* configurações textos do produto  */
+#tshirt-text-informations{
+    width: 90%; 
+    color: var(--gold);
+    gap: 30px;
+}
+#tshirt-text-informations h1{
+    font-size: 2.5em;
+}
+#tshirt-text-informations p{
+    width: 90%;
+    text-align: justify;
+}
+#tshirt-text-informations p:last-child{
+    font-size: 1.5em;
+}
+/* configurações das opções de cores e tamanhos */
+#tshirt-text-colors, #tshirt-text-sizes{
+    width: 100%;
+    height: 5%;
+    color: var(--gold);
+    flex-direction: row;
+}
+#tshirt-text-colors{
+    justify-content: flex-start !important;
+    gap: 20px;
+}
+.colors, .size{
+    all: unset;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+/* criação de uma borda dourada assim que é clickada */
+.colors:checked{
+    border: solid var(--light-yellow) 3px;
+}
+/* colorações possíveis */
+.black{
+    background-image: linear-gradient(#000 40%, #000 40%);
+}
+.white{
+    background-image: linear-gradient(#fff 40%, #fff 40%);
+}
+.red{
+    background-image: linear-gradient(#f00 40%, #f00 40%);
+}
+.blue{
+    background-image: linear-gradient(#00f 40%, #00f 40%);
+}
+.green{
+    background-image: linear-gradient(#0f0 40%, #0f0 40%);
+}
+.beige{
+    background-image: linear-gradient(var(--beige) 40%, var(--beige) 40%);
+}
+/* configurações individual da área de tamanhos */
+#tshirt-text-sizes{
+    width: auto;
+    position: relative;
+    justify-content: space-evenly !important;
+}
+.size{
+    border: solid var(--light-yellow) 3px;
+}
+.size:checked{
+    background-color: rgb(250, 235, 215, .5);;
+}
+#tshirt-text-sizes label{
+    position: relative;
+    right: 7.6%;
+    font-size: .9em;
+}
+/* configuração input da quantidade de roupas */
+#tshirt-text-amount input{
+    color: var(--gold);
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 3px solid var(--gold);
+}
+input[type="number"]::placeholder{
+    color: var(--gold);
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+/* configuração do texto */
+#tshirt-text-price{
+    color: #fff;
+    font-size: 1.1em;
+}
+#tshirt-text-price h2 span{
+    color: var(--gold);
+    font-size: 1.2em;
+}
+/* configuração do botão de finalizar compra */
+#tshirt-text-container > a{
+    font-size: 1.2em;
+    padding: 20px 40px;
+    background-color: transparent;
+    color: var(--gold);
+    border: 2px var(--gold) solid;
+    border-radius: 5%;
+    box-shadow: 0 0 40px 0 var(--gold);
+}
+#tshirt-text-container > a:hover{
+    background-color: rgb(250, 235, 215, .5);
+}
+/* ajuste para laptop de tela tamanho medio */
+@media screen and (max-width: 1100px) {
+    /* arrumando a visualização da imagem */
+    #tshirt-img-container{
+        height: 60%;
+        width: 90%;
+    }
+}
+/* ajuste para tablets */
+@media screen and (max-width: 800px){
+    /* aumento da section e mudança para elementos alinhados em coluna */
+    #tshirt_section{
+        height: 170vh;
+        flex-direction: column;
+    }
+    #tshirt_section > div{
+        width: 80%;
+    }
+    /* alinhamento do texto no meio e melhoramento da visualização da imagem */
+    #tshirt-text-container{
+        align-self: end;
+    }
+    #tshirt-img-container{
+        height: 80%;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px){
+    #tshirt-img-container{
+        height: 60%;
+        width: 100%;
+    }
+}
+/* ajuste para celulares */
+@media screen and (max-width: 500px){
+    /* mudanças de tamanhos para melhores visualizações das imagens */
+    #tshirt-img-container{
+        height: 50%;
+        width: 120%;
+    }
+    #tshirt-img-container img:hover{
+        height: 150%;
+        width: 150%;
+    }
+    /* aumento da área de texto */
+    #tshirt-text-container{
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 400px){
+    /* mudanças de tamanhos para melhores visualizações das imagens */
+    #tshirt-img-container{
+        height: 45%;
+    }
+    /* diminuição para melhor espaçamentos dos elementos */
+    #tshirt-text-informations h1{
+        font-size: 2em;
+    }
+    #tshirt-text-informations p{
+        width: 90%;
+        font-size: 1em;
+    }
+    #tshirt-text-informations p:last-child{
+        font-size: 1.3em;
+    }
+    #tshirt-text-colors{
+        width: 100%;
+    }
+}

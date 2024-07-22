@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roupas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/product.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo com link para a página home -->
+        <a href="../../index.html" class="logo">
+            <img src="../../imgs/logo.png">
+        </a>
+        <!-- botão para barra de navegação (celulares e tablets) -->
+        <input type="checkbox">
+        <!-- Barra de navegação -->
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../products.html">PRODUTOS</a></li>
+                <li><a href="../about.html">SOBRE NÓS</a></li>
+                <li><a href="../contact.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- seção do produto selecionado -->
+        <section id="tshirt_section">
+            <div class="" data-animation="left">
+                <!-- container com imagem do produto selecionado -->
+                <div id="tshirt-img-container">
+                    <img src="../../imgs/Tshirt-1-high.png">
+                </div>
+            </div>
+            <!-- container com textos de informações do produto selecionado -->
+            <div id="tshirt-text-container" class="" data-animation="right">
+                <!-- Nome, descrições e gênero do produto selecionado -->
+                <div id="tshirt-text-informations">
+                    <h1>Camiseta Espantalho</h1>
+                    <p>Uma camiseta com estilo mais simples, sem muito destaques de estampas grandes, apenas um pequeno
+                        espantalho na parte superior do lado direito do peito. Perfeita para situações para sair no
+                        estilo, porém sem querer chamar muita atenção. Devido nosso algodão, é recomendado evitar que
+                        caia sujeiras que marcam muito, visto que é mais difícil a retirada dos mesmos.</p>
+                    <p>Masculino</p>
+                </div>
+                <!-- Cores do produto selecionado -->
+                <div id="tshirt-text-colors">
+                    <h2>Cores:</h2>
+                    <input type="radio" name="colors-radio" class="colors black" checked>
+                    <input type="radio" name="colors-radio" class="colors white">
+                    <input type="radio" name="colors-radio" class="colors red">
+                    <input type="radio" name="colors-radio" class="colors blue">
+                    <input type="radio" name="colors-radio" class="colors green">
+                </div>
+                <!-- tamanhos do produto selecionado -->
+                <div id="tshirt-text-sizes">
+                    <h2>Tamanho:</h2>
+                    <input type="radio" name="size-radio" id="size-pp" class="size" checked><label
+                        for="size-pp">PP</label>
+                    <input type="radio" name="size-radio" id="size-p" class="size"><label for="size-p">P</label>
+                    <input type="radio" name="size-radio" id="size-m" class="size"><label for="size-m">M</label>
+                    <input type="radio" name="size-radio" id="size-g" class="size"><label for="size-g">G</label>
+                    <input type="radio" name="size-radio" id="size-gg" class="size"><label for="size-gg">GG</label>
+                </div>
+                <!-- quantidade do produto selecionado -->
+                <div id="tshirt-text-amount">
+                    <input type="number" min="0" placeholder="Quantidade" value="1">
+                </div>
+                <!-- preço do produto selecionado -->
+                <div id="tshirt-text-price">
+                    <h2><s>R$ 179,99</s><span><br>R$ 139,99</span></h2>
+                </div>
+                <!-- botão de comprar produto -->
+                <a href="../adress.html" class="border-shine">Comprar</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Descrição dos copyrights, Todas as imagens utilizados foram criadas pela ia desenvolvida pela DreamStudio -->
+        <div id="copyrights">
+            <p>© 2024 Roupas. Todos os direitos reservados.<br>
+                Todos os direitos de imagens são reservados ao DreamStudio.<br>
+                Todos os direitos de icons são reservados ao FlatIcon: FreePik e Pixel Perfect.</p>
+        </div>
+        <div id="social-medias">
+            <!-- Redirecionamento para redes sociais -->
+            <div>
+                <a href="">
+                    <img class="icon" src="../../imgs/instagram-icon.png">
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img class="icon" src="../../imgs/github-icon.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../../js/animation.js" async defer></script>
+</body>
+
+</html>

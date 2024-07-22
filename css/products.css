@@ -1,0 +1,145 @@
+/* exportação dos elementos base */
+@import url(./sub_css/var.css);
+@import url(./sub_css/header.css);
+@import url(./sub_css/animations.css);
+@import url(./sub_css/footer.css);
+/* área para adicionar display flex nos elementoa que precisam (1)*/
+#showcase-section, #showcase-filter, #showcase-template div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* configuração section da vitrine*/
+#showcase-section{
+    height: 150vh;
+    width: 100vw;
+}
+/* configuração do container do filtro lateral */
+#showcase-filter{
+    width: 15%;
+    height: 100%;
+    align-items: baseline;
+}
+/* configuração título do filtro */
+#gender h2{
+    color: var(--gold);
+    font-size: 1.75em;
+    margin: 20px;
+}
+/* configuração das opções do filtro */
+.filter-type{
+    margin-bottom: 10px;
+}
+.filter-type > input[type=radio]{
+    appearance: none;
+    background-color: transparent;
+    padding: 5%;
+    border: 2px var(--gold) solid;
+    border-radius: 50%;
+}
+.filter-type > input[type=radio]:checked{
+    background-image: radial-gradient(var(--gold) 40%, transparent 60%);
+}
+.filter-type label a{
+    color: var(--gold);
+    font-size: 1.2em;
+    padding-left: 20px;
+    position: relative;
+    right: 20px;
+}
+/* template da vitrine */
+#showcase-template{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#showcase-template div{
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+}
+/* donfigurações dos textos dos itens */
+#showcase-template > div p, #showcase-template > div h2{
+    color: var(--gold);
+    text-align: center;
+}
+/* donfigurações dos textos das imagens */
+#showcase-template div img{
+    width: 200px;
+    height: 200px;
+    background-color: var(--purple);
+    border-radius: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* configurações individuais dos items */
+.item{
+    color: var(--gold);
+    border: 2px var(--gold) solid;
+    padding: 10px 20px;
+    border-radius: 5%;
+}
+.item:hover{
+    background-color: rgb(250, 235, 215, .5);
+}
+/* adicionando um brilho na imagem quando o mouse estiver em cima */
+.item:hover ~ img{
+    height: 200px;
+    width: 200px;
+    -webkit-animation: shine 3s infinite;
+    animation: shine 3s infinite;
+}
+/* ajuste para tablets */
+@media screen and (max-width: 800px) {
+    /* aumento do tamanho da section para caber os elementos */
+    #showcase-section{
+        height: 250vh;
+    }
+    /* ajuste de fonte */
+    #showcase-template > div h2{
+        width: 80%;
+        font-size: 1.2em;
+    }
+    /* afastando da borda */
+    .filter-type{
+        margin-left: 20px;
+    }
+    /* ajustando para alcansar o botão */
+    .filter-type label a{
+        font-size: 1.1em;
+        padding-left: 15px;
+        right: 17px;
+    }
+    /* mudando o template para aparecer 2 elementos ao invés de 3 */
+    #showcase-template{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* mudança do tamanho do  filter */
+    .filter-type{
+        width: 100%;
+    }
+    /* aumento do tamanho da section para caber os elementos */
+    #showcase-section{
+        height: 550vh;
+    }
+    /* mudando o template para aparecer 1 elementos ao invés de 2 */
+    #showcase-template{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
+}
+/* ajuste para tablets */
+@media screen and (max-width: 600px) {
+    /* ajuste das fontes do filter */
+    #gender h2{
+        font-size: 1.5em;
+    }
+    /* ajuste tamanho do template */
+    #showcase-template{
+        width: 70%;
+    }
+}

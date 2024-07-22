@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roupas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/products.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo com link para a página home -->
+        <a href="../../index.html" class="logo">
+            <img src="../../imgs/logo.png">
+        </a>
+        <!-- botão para barra de navegação (celulares e tablets) -->
+        <input type="checkbox">
+        <!-- Barra de navegação -->
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="">PRODUTOS</a></li>
+                <li><a href="../about.html">SOBRE NÓS</a></li>
+                <li><a href="../contact.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    </main>
+    <!-- seção de vitrine dos produtos: N° de produtos 9 -->
+        <section id="showcase-section" style="height: 75vh;">
+            <!-- divisão de filtro dos produtos -->
+            <div id="showcase-filter">
+                <!-- Filtro de Masculino, Feminino, Unissex, e infantil -->
+                <div id="gender" class="" data-animation="left">
+                    <h2>Gênero</h2>
+                    <div class="filter-type">
+                        <input type="radio" name="G" value="Geral" id="Geral">
+                        <label for="Geral"><a href="../products.html">Geral</a></label>
+                    </div>
+                    <div class="filter-type">
+                        <input type="radio" name="G" value="Unissex" id="Unissex">
+                        <label for="Unissex"><a href="./products-uni.html">Unissex</a></label>
+                    </div>
+                    <div class="filter-type">
+                        <input type="radio" name="G" value="Masculino" id="Masculino">
+                        <label for="Masculino"><a href="./products-mas.html">Masculino</a></label>
+                    </div>
+                    <div class="filter-type">
+                        <input type="radio" name="G" value="Feminino" id="Feminino">
+                        <label for="Feminino"><a href="./products-fem.html">Feminino</a></label>
+                    </div>
+                    <div class="filter-type">
+                        <input type="radio" name="G" value="Infantil" id="Infantil" checked>
+                        <label for="Infantil"><a href="./products-inf.html">Infantil</a></label>
+                    </div>
+                </div>
+            </div>
+            <!-- divisão template dos produtos -->
+            <div id="showcase-template">
+                <!-- itens -->
+                <div class="" data-animation="right" data-filter="infantil">
+                    <a href="../../html/sub-html/tshirt2.html" class="item">Ver Produto</a>
+                    <p>R$ 119,99</p>
+                    <h2>Camiseta Cavaleiro</h2>
+                    <img src="../../imgs/Tshirt-2.png">
+                </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Descrição dos copyrights, Todas as imagens utilizados foram criadas pela ia desenvolvida pela DreamStudio -->
+        <div id="copyrights">
+            <p>© 2024 Roupas. Todos os direitos reservados.<br>
+            Todos os direitos de imagens são reservados ao DreamStudio.<br>
+            Todos os direitos de icons são reservados ao FlatIcon: FreePik e Pixel Perfect.</p>
+        </div>
+        <div id="social-medias">
+            <!-- Redirecionamento para redes sociais -->
+            <div>
+                <a href="">
+                    <img class="icon" src="../../imgs/instagram-icon.png">
+                </a>                
+            </div>
+            <div>
+                <a href="">
+                    <img class="icon" src="../../imgs/github-icon.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../../js/animation.js" async defer></script>
+</body>
+
+</html>

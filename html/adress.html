@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roupas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/adress.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo com link para a página home -->
+        <a href="../index.html" class="logo">
+            <img src="../imgs/logo.png">
+        </a>
+        <!-- botão para barra de navegação (celulares e tablets) -->
+        <input type="checkbox">
+        <!-- Barra de navegação -->
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./products.html">PRODUTOS</a></li>
+                <li><a href="./about.html">SOBRE NÓS</a></li>
+                <li><a href="./contact.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- seção de endereço do cliente -->
+        <section id="adress-section">
+            <div id="adress-container">
+                <h1>Seu item foi salvo. Precisamos apenas de algumas informações:</h1>
+                <!-- divisão do nome do cliente -->
+                <div id="adress-name"><label for="name">Nome completo: </label><input type="text" id="name" placeholder="Nome" required></div>
+                <!-- divisão do endereço do cliente -->
+                <div id="adress-info"><label for="adress-input">Endereço completo: </label><input type="text" id="adress-input" placeholder="Endereço" required></div>
+                <!-- divisão de estado do cliente -->
+                <div id="adress-state"><label for="UF">Estado: </label><select id="UF" placeholder="Estado" required>
+                    <option value="choose" default>Escolha um Estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select></div>
+                <!-- divisão da cidade do cliente -->
+                <div id="adress-city"><label for="city">Cidade: </label><input type="text" id="city" placeholder="Cidade" required></div>
+                <!-- divisão do email do cliente -->
+                <div id="adress-email"><label for="Email">Email: </label><input type="email" id="Email" placeholder="Email"></div>
+                <!-- botão de enviar informações -->
+                <input type="submit" value="Enviar" class="border-shine">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Descrição dos copyrights, Todas as imagens utilizados foram criadas pela ia desenvolvida pela DreamStudio -->
+        <div id="copyrights">
+            <p>© 2024 Roupas. Todos os direitos reservados.<br>
+            Todos os direitos de imagens são reservados ao DreamStudio.<br>
+            Todos os direitos de icons são reservados ao FlatIcon: FreePik e Pixel Perfect.</p>
+        </div>
+        <div id="social-medias">
+            <!-- Redirecionamento para redes sociais -->
+            <div>
+                <a href="">
+                    <img class="icon" src="../imgs/instagram-icon.png">
+                </a>                
+            </div>
+            <div>
+                <a href="">
+                    <img class="icon" src="../imgs/github-icon.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/animation.js" async defer></script>
+</body>
+
+</html>

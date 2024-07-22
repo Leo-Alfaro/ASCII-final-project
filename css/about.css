@@ -1,0 +1,164 @@
+/* exportação dos elementos base */
+@import url(./sub_css/var.css);
+@import url(./sub_css/header.css);
+@import url(./sub_css/animations.css);
+@import url(./sub_css/footer.css);
+/* área para adicionar display flex nos elementoa que precisam */
+section, .container, .container>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* configuração section da página about*/
+section{
+    height: 60vh;
+    width: 100vw;
+}
+/* configuração dos containers roxoa que estão as informações */
+.container{
+    height: 80%;
+    width: 80%;
+    background-color: var(--purple);
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    box-shadow: 0 0 8px 0 var(--shadow);
+}
+/* configurações dos textos que aparecem em todas as seções */
+.text-container{
+    height: 80%;
+    width: 60%;
+    color: var(--gold);
+    flex-direction: column;
+    /* !important utilizado devido a especifidade maior na área de displat flex (.container>div) */
+    justify-content: space-evenly !important;
+}
+.text-container p{
+    font-size: 1.2em;
+    text-align: justify;
+    width: 85%;
+}
+/* invertendo a ordem entre o texto e a imagem da seção mission */
+.mission{
+    flex-direction: row-reverse;
+}
+/* ajustando tamanho das imagens */
+.img-container{
+    height: 90%;
+    width: 40%;
+}
+.img-container img{
+    height: 65%;
+    width: 50%;
+}
+.mission-item img{
+    height: 75%;
+    width: 60%;
+}
+.values-item img{
+    height: 80%;
+}
+/* mudando cor dos valores da empresa para destaque */
+span{
+    font-size: 1.25em;
+    color: #fff;
+}
+/* ajuste para laptop de tela média */
+@media screen and (max-width: 1100px) {
+    /* mudanças de tamanhos para melhores visualizações das imagens */
+    .img-container img{
+        height: 65%;
+        width: 65%;
+    }
+    .mission-item img{
+        height: 85%;
+        width: 70%;
+    }
+    .values-item img{
+        height: 70%;
+        width: 70%;
+    }
+    /* diminuição para melhor espaçamentos dos elementos */
+    .text-container p{
+        font-size: 1.1em;
+    }
+    span{
+        font-size: 1.15em;
+    }
+}
+/* ajuste para tablets */
+@media screen and (max-width: 800px){
+    /* aumento da altura da seção para transforma-la em coluna */
+    section{
+        height: 100vh;
+    }
+    /* ajuste para a coluna */
+    .container{
+        height: 95%;
+        flex-direction: column-reverse;
+    }
+    .text-container h2{
+        margin-bottom: 20px;
+    }
+    .text-container p{
+        width: 120%;
+    }
+    /* mudanças de tamanhos para melhores visualizações das imagens */
+    .img-container img{
+        height: 60%;
+        width: 70%;
+    }
+    .mission-item img{
+        height: 85%;
+        width: 95%;
+    }
+    .values-item img{
+        height: 80%;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px){
+     /* aumento da altura da seção para transforma-la em coluna */
+    .img-container img{
+        height: 60%;
+        width: 95%;
+    }
+    .mission-item img{
+        height: 80%;
+        width: 100%;
+    }
+    .values-item img{
+        height: 80%;
+        width: 80%;
+    }
+}
+/* ajuste para celulares */
+@media screen and (max-width: 500px){
+    /* diminuição para melhor espaçamentos dos elementos */
+    .text-container h2{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .text-container p{
+        font-size: 1.05em;
+    }
+    /* aumento da altura da seção para transforma-la em coluna */
+    .img-container img{
+        height: 50%;
+        width: 110%;
+    }
+    .mission-item img{
+        height: 80%;
+        width: 150%;
+    }
+    .values-item img{
+        height: 60%;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .text-container p{
+        font-size: .95em;
+        width: 140%;
+    }
+}

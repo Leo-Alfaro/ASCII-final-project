@@ -1,0 +1,27 @@
+/* configuração incial para não ter problemas com margin e padding */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* variaveis de cor */
+:root{
+    --background: #19181e;
+    --shadow: #faebd7;
+    --light-yellow: #fbeb94;
+    --beige: #ccb47c;
+    --purple: #3c1c4c;
+    --gold: #f0e68c;
+}
+/* aplicação para evitar o scroll no horizontal da página */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* cor do background da página */
+body{
+    background-color: var(--background);
+}
+/* remoção da underline dos links */
+a{
+    text-decoration: none;
+}

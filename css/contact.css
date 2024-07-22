@@ -1,0 +1,76 @@
+/* exportação dos elementos base */
+@import url(./sub_css/var.css);
+@import url(./sub_css/header.css);
+@import url(./sub_css/animations.css);
+@import url(./sub_css/footer.css);
+/* área para adicionar display flex nos elementoa que precisam */
+section{
+    height: 75vh;
+    width: 100vw;
+}
+/* configuração section da página adress */
+#contact-container, #social, #social > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* configuração das posições das redes sociais e textos */
+#social{
+    height: 60%;
+    flex-direction: column;
+}
+#social > div{
+    font-size: 1.1em;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+#social > div > a{
+    color: var(--gold);
+}
+/* mudando tamanho dos icones das redes sociais */
+.icons{
+    height: 48px;
+    width: 48px;
+}
+/* configuração textos de endereços e contatos diretos */
+#adress{
+    height: 60%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#adress > div{
+    font-size: 1.2em;
+    color: var(--gold);
+}
+span{
+    color: #fff;
+}
+/* ajuste para tablets */
+@media screen and (max-width: 800px) {
+    /* ajustes tamanhos de icones e fontes*/
+    #social > div{
+        font-size: 1em;
+    }
+    .icons{
+        height: 32px;
+        width: 32px;
+    }
+    #adress > div{
+        font-size: 1em;
+    }
+}
+@media screen and  (max-width: 500px){
+    section{
+        height: 125vh;
+    }
+    #contact-container{
+        flex-direction: column;
+    }
+    #adress > div{
+        align-self: center;
+        width: 80%;
+        font-size: .95em;
+    }
+}

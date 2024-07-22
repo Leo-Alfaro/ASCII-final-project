@@ -1,0 +1,111 @@
+/* animação que faz o elemento surgir da direita para esquerda */
+.appers-right{
+    position: relative;
+    top: 0;
+    left: 0px;
+    opacity: 1;
+    -webkit-animation: transtionRight 1.5s forwards;
+    animation: transtionRight 1.5s forwards;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-direction: normal;
+    -webkit-animation-direction: normal;
+}
+@-webkit-keyframes transtionRight {
+    0% {
+        left: 10%;
+        opacity: 0;
+    }
+    100% {
+        left: 0%;
+        opacity: 1;
+    }
+}
+@keyframes transtionRight {
+    0% {
+        left: 10%;
+        opacity: 0;
+    }
+    100% {
+        left: 0%;
+        opacity: 1;
+    }
+}
+/* animação que faz o elemento surgir da esquerda para a direita */
+.appers-left{
+    position: relative;
+    top: 0;
+    right: 0px;
+    opacity: 1;
+    -webkit-animation: transtionLeft 1.5s forwards;
+    animation: transtionLeft 1.5s forwards;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-direction: normal;
+    -webkit-animation-direction: normal;
+}
+@-webkit-keyframes transtionLeft {
+    0% {
+        right: 10%;
+        opacity: 0;
+    }
+    100% {
+        right: 0%;
+        opacity: 1;
+    }
+}
+@keyframes transtionLeft {
+    0% {
+        right: 10%;
+        opacity: 0;
+    }
+    100% {
+        right: 0%;
+        opacity: 1;
+    }
+}
+/* modificação para o elemento não aparecer até a animação ser inciada */
+[data-animation]{
+    opacity: 0;
+}
+/* animação para mover o brilho atrás dos elementos */
+.border-shine {
+    -webkit-animation: shine 3s infinite;
+    animation: shine 3s infinite;
+}
+
+@-webkit-keyframes shine {
+    0% {
+        box-shadow: 0 0 16px 0 var(--shadow);
+    }
+    25% {
+        box-shadow: 0 0 8px 8px var(--shadow);
+    }
+    50% {
+        box-shadow: 8px 0 8px 8px var(--shadow);
+    }
+    75% {
+        box-shadow: 0 8px 8px 8px var(--shadow);
+    }
+    100% {
+        box-shadow: 0 0 8px 0 var(--shadow);
+    }
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 12px 0 var(--shadow);
+    }
+    25% {
+        box-shadow: 0 0 12px 12px var(--shadow);
+    }
+    50% {
+        box-shadow: 12px 0 12px 0 var(--shadow);
+    }
+    75% {
+        box-shadow: 0 12px 12px 0 var(--shadow);
+    }
+    100% {
+        box-shadow: 0 0 12px 0 var(--shadow);
+    }
+}
